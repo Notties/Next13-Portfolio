@@ -8,9 +8,7 @@ const Header = () => {
   return (
     <header
       className="h-[100vh] pt-28 overflow-hidden
-    max-[1024px]:h-[68vh]
-
-    max-[600px]:h-[100vh]
+      max-[1024px]:h-[68vh] max-[600px]:h-[100vh]
     "
     >
       <div
@@ -36,7 +34,7 @@ const Header = () => {
             alt="me"
             width={352}
             height={480}
-            placeholder="empty"
+            loading='lazy'
           />
         </div>
         <a
