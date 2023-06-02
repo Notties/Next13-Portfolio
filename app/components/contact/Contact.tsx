@@ -1,8 +1,8 @@
-import React from 'react'
+"use client";
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <section id='contact'>Contact</section>
   )
 }
 

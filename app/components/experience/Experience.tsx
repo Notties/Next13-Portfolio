@@ -1,8 +1,8 @@
-import React from 'react'
+"use client";
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <section id='experience'>Experience</section>
   )
 }
 

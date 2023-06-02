@@ -1,8 +1,8 @@
-import React from 'react'
+"use client";
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <section id='services'>Services</section>
   )
 }
 
