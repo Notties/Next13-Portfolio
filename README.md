@@ -1,3 +1,6 @@
+### Tutorial by [EGATOR](https://www.youtube.com/@EGATORTUTORIALS)
+### Youtube video [React Portfolio Website Tutorial From Scratch - Build & Deploy React JS Portfolio Website (2022)](https://youtu.be/G-Cr00UYokU)
+#
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
