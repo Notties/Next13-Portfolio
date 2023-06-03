@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
+import { RxTimer } from "react-icons/rx";
 import { VscFolderLibrary } from "react-icons/vsc";
 
 const About = () => {
@@ -60,14 +60,16 @@ const About = () => {
               max-[1169px]:grid-cols-2
               max-[600px]:grid-cols-2
               max-[600px]:gap-[1rem]
+              max-[600px]:mx-3
+              max-[600px]:my-[-5px]
               
               "
             >
               {/* about__card */}
               <article
-                className="bg-bg-variant border-1 border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
-                duration-700 hover:scale-95 hover:cursor-default
+                duration-700 hover:scale-100 hover:cursor-default
                 "
               >
                 {/* about__icon */}
@@ -82,15 +84,15 @@ const About = () => {
                 <h5 className="text-[0.95rem]">Experience</h5>
                 <p
                   className="max-[600px]:mt-1
-              max-[600px]:mt-0 text-[0.8rem] text-light max-[1024px]:my-1"
+              max-[600px]:mb-0 text-[0.8rem] text-light max-[1024px]:my-1"
                 >
                   4 Months Working
                 </p>
               </article>
               <article
-                className="bg-bg-variant border-1 border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
-                duration-700 hover:scale-95 hover:cursor-default
+                duration-700 hover:scale-100 hover:cursor-default
               "
               >
                 <div
@@ -99,20 +101,20 @@ const About = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <FiUsers className="text-primary text-[1.4rem] mb-[1rem]" />
+                  <RxTimer className="text-primary text-[1.4rem] mb-[1rem]" />
                 </div>
-                <h5 className="text-[0.95rem]">Clients</h5>
+                <h5 className="text-[0.95rem]">Coding times</h5>
                 <p
                   className="max-[600px]:mt-1
-              max-[600px]:mt-0 text-[0.8rem] text-light max-[1024px]:my-1"
+              max-[600px]:mb-0 text-[0.8rem] text-light max-[1024px]:my-1"
                 >
-                  200+ Worldwide
+                  500+ Hours
                 </p>
               </article>
               <article
-                className="bg-bg-variant border-1 border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
-                duration-700 hover:scale-95 hover:cursor-default
+                duration-700 hover:scale-100 hover:cursor-default
               "
               >
                 <div
@@ -126,14 +128,16 @@ const About = () => {
                 <h5 className="text-[0.95rem]">Project</h5>
                 <p
                   className="max-[600px]:mt-1
-              max-[600px]:mt-0 text-[0.8rem] text-light max-[1024px]:my-1"
+              max-[600px]:mb-0 text-[0.8rem] text-light max-[1024px]:my-1"
                 >
-                  80+ Completed
+                  20+ Repositories
                 </p>
               </article>
             </div>
 
-            <p className="my-6 text-light max-[600px]:mb-3 max-[600px]:mt-4">
+            <p className="my-6 text-light max-[600px]:mb-2
+              max-[600px]:mt-4 max-[600px]:text-[0.9rem]
+            ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Voluptatum quam quibusdam optio veniam unde, a vel illo quae
               architecto voluptatibus reprehenderit soluta, eum nostrum! Numquam

@@ -38,7 +38,7 @@ const Header = () => {
           />
         </div>
         <a
-          href="#contact"
+          href="#about"
           className="absolute right-[-2.3rem] bottom-[5rem] rotate-90 font-normal text-[0.9rem] max-[600px]:hidden"
         >
           Scroll Down
