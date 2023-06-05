@@ -1,6 +1,7 @@
 "use client";
 
-import data from "../../utils/DataPortfolio.json";
+import Image from "next/image";
+import data from "../../utils/PortfolioData.json";
 
 interface MyData {
   id: number;
@@ -8,17 +9,16 @@ interface MyData {
   title?: string;
   github?: string;
   demo?: string;
+  view?: string;
 }
 
 const Portfolio = () => {
   const jsonData: MyData[] = data;
 
-  console.log(jsonData);
-
   return (
     <>
       <section id="portfolio">
-        <h5>My Recent Work</h5>
+        <h5>My Recent</h5>
         <h2 className="text-3xl">Portfolio</h2>
 
         {/* portfolio__container */}
@@ -30,9 +30,11 @@ const Portfolio = () => {
           max-[750px]:gap-[1rem]
           max-[750px]:w-[90%]
         "
-          style={{ display: "grid" }}
+          style={{
+            display: "grid",
+          }}
         >
-          {jsonData.map(({ id, image, title, github, demo }: MyData) => {
+          {jsonData.map(({ id, image, title, github, demo, view }: MyData) => {
             return (
               <article
                 className="bg-bg-variant border-1 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
@@ -41,18 +43,50 @@ const Portfolio = () => {
                 key={id}
               >
                 <div className="rounded-[1.5rem] overflow-hidden">
-                  <img
-                    src={image}
-                    alt=""
-                    loading="lazy"
-                    className="object-cover w-[100%] h-fit scale-95 rounded-[1.5rem] hover:scale-100 transition duration-700"
-                  />
+                  {image ? (
+                    <Image
+                      key={id}
+                      loading="lazy"
+                      src={image as string}
+                      alt="image"
+                      width={1920}
+                      height={1080}
+                      className="opacity-0 object-cover w-[100%] h-fit scale-95 rounded-[1.5rem] hover:scale-100 transition duration-700"
+                      onLoadingComplete={(image) =>
+                        image.classList.remove("opacity-0")
+                      }
+                    />
+                  ) : (
+                    <Image
+                      key={id}
+                      loading="lazy"
+                      src={"/noimg.png"}
+                      alt="image"
+                      width={1920}
+                      height={1080}
+                      className="opacity-0 object-cover w-[100%] h-fit scale-95 rounded-[1.5rem] hover:scale-100 transition duration-700"
+                      onLoadingComplete={(image) =>
+                        image.classList.remove("opacity-0")
+                      }
+                    />
+                  )}
                 </div>
-                <h3 className="my-[1.2rem]">{title}</h3>
-                <div className="flex gap-[1rem] mb-[0.5rem]">
-                  <a href={github} className="btn" target="_blank">
-                    Github
-                  </a>
+                <h3 className="my-[1.2rem] text-center">{title}</h3>
+                <div className="flex gap-[1rem] mb-[0.5rem] justify-center">
+                  {github ? (
+                    <a
+                      href={github}
+                      className="btn "
+                      target="_blank"
+                    >
+                      Github
+                    </a>
+                  ) : null}
+                  {view ? (
+                    <a href={view} className="btn btn-primary" target="_blank">
+                      View
+                    </a>
+                  ) : null}
                   {demo ? (
                     <a href={demo} className="btn btn-primary" target="_blank">
                       Live Site

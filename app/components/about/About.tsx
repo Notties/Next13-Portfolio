@@ -125,7 +125,7 @@ const About = () => {
                 >
                   <VscFolderLibrary className="text-primary text-[1.4rem] mb-[1rem]" />
                 </div>
-                <h5 className="text-[0.95rem]">Project</h5>
+                <h5 className="text-[0.95rem]">Lab Project</h5>
                 <p
                   className="max-[600px]:mt-1
               max-[600px]:mb-0 text-[0.8rem] text-light max-[1024px]:my-1"
@@ -135,13 +135,14 @@ const About = () => {
               </article>
             </div>
 
-            <p className="my-6 text-light max-[600px]:mb-2
+            <p
+              className="my-6 text-light max-[600px]:mb-2
               max-[600px]:mt-4 max-[600px]:text-[0.9rem]
-            ">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum quam quibusdam optio veniam unde, a vel illo quae
-              architecto voluptatibus reprehenderit soluta, eum nostrum! Numquam
-              fuga minima inventore quisquam ipsum.
+            "
+            >
+              I have a high intention to apply my knowledge and a passion for
+              developing designing and implement applications, fast learning,
+              and is willing to learn new skills for further improvement.
             </p>
 
             <a href="#contact" className="btn btn-primary">

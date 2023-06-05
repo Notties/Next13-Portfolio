@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "image": "/sa.png",
+        "title": "Sentiment analysis Web App (2023)",
+        "github": "https://github.com/Notties/Sentiment-Analysis-WebApp",
+        "demo": "https://sentiment-analysis-tan.vercel.app/"
+    },
+    {
+        "id": 2,
+        "image": "/sa-model.png",
+        "title": "Model Sentiment analysis (2023)",
+        "github": "https://github.com/Notties/Sentiment-Analysis-Model",
+        "demo": ""
+    },
+    {
+        "id": 3,
+        "image": "/reward.png",
+        "title": "Reward of CWIE Achievement (2023)",
+        "github": "",
+        "demo": "",
+        "view": "https://www.facebook.com/HuachiewOfficial/posts/pfbid0ki3EcEjjUJGTKFAXgxuxPA9w6HChEZ9FoAq64Ware9yH9CWrgbKcxSJHiVD14N84l"
+    },
+    {
+        "id": 4,
+        "image": "/next13.png",
+        "title": "Learning Next13 + Framer (2023)",
+        "github": "https://github.com/Notties/Next13-TailwindCSS-Learning",
+        "demo": "https://next13-tailwind-css-learning.vercel.app/"
+    },
+    {
+        "id": 5,
+        "image": "/pos-msc.png",
+        "title": "Restaurant POS Systems (2022)",
+        "github": "",
+        "demo": "",
+        "view": "https://i.imgur.com/sZBjvoT.png"
+    },
+    {
+        "id": 6,
+        "image": "/jutebi.png",
+        "title": "Jutebi Landing Page (2022)",
+        "github": "https://github.com/Notties/Jutebi-website",
+        "demo": "https://jutebi-bot.onrender.com/"
+    }
+    
+]

@@ -167,7 +167,7 @@ const Experience = () => {
                 <BsPatchCheckFill className="mt-[6px] text-primary" />
                 <div>
                   <h4>MongoDB</h4>
-                  <small className="text-light">Intermediate</small>
+                  <small className="text-light">Basic</small>
                 </div>
               </article>
               <article
