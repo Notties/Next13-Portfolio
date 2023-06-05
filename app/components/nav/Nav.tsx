@@ -15,14 +15,14 @@ const Nav = () => {
     const handleScroll = () => {
       const aboutSection: HTMLElement | null = document.getElementById("about");
       const experienceSection: HTMLElement | null = document.getElementById("experience");
-      const servicesSection: HTMLElement | null = document.getElementById("services");
+      const portfolioSection: HTMLElement | null = document.getElementById("portfolio");
       const contactSection: HTMLElement | null = document.getElementById("contact");
       const scrollPosition: number = window.scrollY;
 
       if (
         aboutSection &&
         experienceSection &&
-        servicesSection &&
+        portfolioSection &&
         contactSection &&
         scrollPosition >= aboutSection.offsetTop! &&
         scrollPosition < experienceSection.offsetTop!
@@ -31,22 +31,22 @@ const Nav = () => {
       } else if (
         aboutSection &&
         experienceSection &&
-        servicesSection &&
+        portfolioSection &&
         contactSection &&
         scrollPosition >= experienceSection.offsetTop! &&
-        scrollPosition < servicesSection.offsetTop!
+        scrollPosition < portfolioSection.offsetTop!
       ) {
         setActiveNav("#experience");
       } else if (
         aboutSection &&
         experienceSection &&
-        servicesSection &&
+        portfolioSection &&
         contactSection &&
-        scrollPosition >= servicesSection.offsetTop! &&
+        scrollPosition >= portfolioSection.offsetTop! &&
         scrollPosition < contactSection.offsetTop!
       ) {
-        setActiveNav("#services");
-      } else if (aboutSection && experienceSection && servicesSection && contactSection && scrollPosition >= contactSection.offsetTop!) {
+        setActiveNav("#portfolio");
+      } else if (aboutSection && experienceSection && portfolioSection && contactSection && scrollPosition >= contactSection.offsetTop!) {
         setActiveNav("#contact");
       } else {
         setActiveNav("#");
@@ -101,12 +101,12 @@ const Nav = () => {
           <BiBook />
         </a>
         <a
-          href="#services"
+          href="#portfolio"
           className={`active p-[0.9rem] flex text-[1.1rem] rounded-[50%] text-light
           hover:bg-black-variant
-          ${activeNav === "#services" ? "bg-bg text-white" : ""}
+          ${activeNav === "#portfolio" ? "bg-bg text-white" : ""}
           `}
-          onClick={() => setActiveNav("#services")}
+          onClick={() => setActiveNav("#portfolio")}
         >
           <RiServiceLine />
         </a>
