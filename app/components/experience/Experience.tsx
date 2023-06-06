@@ -18,7 +18,7 @@ const Experience = () => {
         >
           {/* experience__frontend */}
           <div
-            className="bg-bg-variant border-1 transform-gpu border-solid 
+            className="bg-bg-variant border-1  border-solid 
                 rounded-[1rem] py-[2.4rem] px-[5rem]
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-br
                 from-primary-variant transition
@@ -107,7 +107,7 @@ const Experience = () => {
           </div>
           {/* End of frontend */}
           <div
-            className="bg-bg-variant border-1 transform-gpu border-solid 
+            className="bg-bg-variant border-1  border-solid 
                 rounded-[1rem] py-[2.4rem] px-[5rem]
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-br
                 from-primary-variant transition

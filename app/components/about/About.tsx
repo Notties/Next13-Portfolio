@@ -67,7 +67,7 @@ const About = () => {
             >
               {/* about__card */}
               <article
-                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
                 duration-700 hover:scale-100 hover:cursor-default
                 "
@@ -90,7 +90,7 @@ const About = () => {
                 </p>
               </article>
               <article
-                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
                 duration-700 hover:scale-100 hover:cursor-default
               "
@@ -112,7 +112,7 @@ const About = () => {
                 </p>
               </article>
               <article
-                className="bg-bg-variant border-1 scale-95 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1 scale-95  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
                 duration-700 hover:scale-100 hover:cursor-default
               "

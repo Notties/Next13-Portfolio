@@ -6,59 +6,10 @@ import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const aboutSection: HTMLElement | null = document.getElementById("about");
-      const experienceSection: HTMLElement | null = document.getElementById("experience");
-      const portfolioSection: HTMLElement | null = document.getElementById("portfolio");
-      const contactSection: HTMLElement | null = document.getElementById("contact");
-      const scrollPosition: number = window.scrollY;
-
-      if (
-        aboutSection &&
-        experienceSection &&
-        portfolioSection &&
-        contactSection &&
-        scrollPosition >= aboutSection.offsetTop! &&
-        scrollPosition < experienceSection.offsetTop!
-      ) {
-        setActiveNav("#about");
-      } else if (
-        aboutSection &&
-        experienceSection &&
-        portfolioSection &&
-        contactSection &&
-        scrollPosition >= experienceSection.offsetTop! &&
-        scrollPosition < portfolioSection.offsetTop!
-      ) {
-        setActiveNav("#experience");
-      } else if (
-        aboutSection &&
-        experienceSection &&
-        portfolioSection &&
-        contactSection &&
-        scrollPosition >= portfolioSection.offsetTop! &&
-        scrollPosition < contactSection.offsetTop!
-      ) {
-        setActiveNav("#portfolio");
-      } else if (aboutSection && experienceSection && portfolioSection && contactSection && scrollPosition >= contactSection.offsetTop!) {
-        setActiveNav("#contact");
-      } else {
-        setActiveNav("#");
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <>

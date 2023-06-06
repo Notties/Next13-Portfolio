@@ -37,7 +37,7 @@ const Portfolio = () => {
           {jsonData.map(({ id, image, title, github, demo, view }: MyData) => {
             return (
               <article
-                className="bg-bg-variant border-1 transform-gpu border-solid rounded-[1rem] p-[2rem] text-center
+                className="bg-bg-variant border-1  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
                 duration-700 hover:cursor-default"
                 key={id}
