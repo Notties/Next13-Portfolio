@@ -1,30 +1,41 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import { HiOutlineChatBubbleOvalLeft } from "react-icons/hi2";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessageLine } from "react-icons/ri";
+import { message } from "antd";
 
 const Contact = () => {
   const formRef: any = useRef();
+  const [disable, setDisable] = useState(false);
 
-  const onSubmit = (e: any) => {
+  const onSubmit = async (e: any) => {
+    message.loading("Sending messages...", 10000);
+    
     e.preventDefault();
+    e.target.disabled = true;
+    setDisable(true);
+    await new Promise((resolve) => setTimeout(resolve, 5000));
     try {
-      "use server";
+      ("use server");
       emailjs.sendForm(
         "service_vtjmya8",
         "template_ayeb4fb",
         formRef.current,
         "cSjTQ5DtMKtAOrFdE"
       );
-      console.log("Send emailjs success: ");
+      message.destroy();
+      message.success("Sending messages successfully :)");
+      e.target.reset();
     } catch (error) {
-      console.log("Send emailjs error: ", error);
+      message.destroy();
+      message.error("Sending messages error :(");
     }
-    e.target.reset();
+    e.target.disabled = false;
+    setDisable(false);
   };
 
   return (
@@ -135,10 +146,15 @@ const Contact = () => {
             resize-none border-2 border-solid border-primary-variant"
           ></textarea>
           <div className="max-[750px]:text-center">
-            
-          <button type="submit" className="flex btn btn-primary ">
-            Send Message
-          </button>
+            <button
+              type="submit"
+              className="flex btn btn-primary disabled:opacity-50
+              disabled:pointer-events-none
+              "
+              disabled={disable}
+            >
+              Send Message
+            </button>
           </div>
         </form>
       </div>
