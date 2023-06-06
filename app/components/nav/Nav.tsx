@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="bg-black w-max px-5 py-2 z-[2] 
+        className="bg-black w-max px-5 py-3 z-[2] 
       fixed left-[50%] translate-x-[-50%] bottom-[2rem]
       flex
       gap-[0.8rem]

@@ -134,9 +134,12 @@ const Contact = () => {
             className="w-[100%] p-[1.5rem] rounded-[0.5rem] bg-opacity-0 bg-bg-variant 
             resize-none border-2 border-solid border-primary-variant"
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <div className="max-[750px]:text-center">
+            
+          <button type="submit" className="flex btn btn-primary ">
             Send Message
           </button>
+          </div>
         </form>
       </div>
     </section>

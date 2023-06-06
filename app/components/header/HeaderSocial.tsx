@@ -1,8 +1,8 @@
 "use client";
 
-import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
-import { FiDribbble } from "react-icons/fi";
+import { BsFacebook } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 
 const HeaderSocial = () => {
   return (
@@ -13,14 +13,14 @@ const HeaderSocial = () => {
       max-[600px]:hidden 
     "
     >
-      <a href="#" target="_blank">
-        <BsLinkedin />
-      </a>
-      <a href="#" target="_blank">
+      <a href="https://github.com/Notties" target="_blank">
         <FaGithub />
       </a>
-      <a href="#" target="_blank">
-        <FiDribbble />
+      <a href="https://www.facebook.com/akthakorn" target="_blank">
+        <BsFacebook />
+      </a>
+      <a href="mailto:akthakorn@gmail.com" target="_blank">
+        <MdEmail />
       </a>
     </div>
   );
