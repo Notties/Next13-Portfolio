@@ -3,7 +3,7 @@
 import { HiOutlineHome } from "react-icons/hi";
 import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
-import { RiServiceLine } from "react-icons/ri";
+import { HiOutlineSquare3Stack3D } from "react-icons/hi2";
 import { BiMessageSquareDetail } from "react-icons/bi";
 
 import { useState } from "react";
@@ -59,7 +59,7 @@ const Nav = () => {
           `}
           onClick={() => setActiveNav("#portfolio")}
         >
-          <RiServiceLine />
+          <HiOutlineSquare3Stack3D />
         </a>
         <a
           href="#contact"
