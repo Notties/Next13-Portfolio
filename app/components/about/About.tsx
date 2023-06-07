@@ -12,7 +12,7 @@ import { TypingText } from "../CustomTexts";
 const About = () => {
   return (
     <>
-      <section id="about">
+      <section id="about" className="h-[100vh]">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
@@ -40,7 +40,7 @@ const About = () => {
             viewport={{ once: false, amount: 0.25 }}
           >
             <div
-              className="w-[100%] aspect-square rounded-[2rem] bg-gradient-to-t from-primary
+              className="w-[100%] rounded-[2rem] bg-gradient-to-t from-primary
             grid place-items-center
             max-[1024px]:w-[50%] 
             max-[1024px]:mx-auto 
@@ -59,7 +59,7 @@ const About = () => {
             "
               >
                 <Image
-                  src="/assets/me-about.jpg"
+                  src="/code.gif"
                   alt="about me"
                   width={1000}
                   height={1000}

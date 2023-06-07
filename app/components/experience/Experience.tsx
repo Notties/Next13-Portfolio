@@ -15,12 +15,12 @@ import { TypingText } from "../CustomTexts";
 const Experience = () => {
   return (
     <>
-      <section id="experience">
+      <section id="experience" className="h-[100vh]">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.25 }}
           className="text-center"
         >
           <TypingText title="What Skills I Have" textStyles="text-center" />
@@ -50,7 +50,7 @@ const Experience = () => {
               variants={staggerContainer}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.25 }}
+              viewport={{ once: true, amount: 0.25 }}
               className="text-center mb-[2rem] text-xl"
             >
               <TypingText
@@ -68,7 +68,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.3, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -89,7 +89,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.4, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -110,7 +110,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.5, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -131,7 +131,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.6, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -152,7 +152,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.7, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -173,7 +173,7 @@ const Experience = () => {
                   variants={fadeIn("up", "tween", 0.8, 1)}
                   initial="hidden"
                   whileInView="show"
-                  viewport={{ once: false, amount: 0.25 }}
+                  viewport={{ once: true, amount: 0.25 }}
                 >
                   <article
                     className="flex gap-[1rem]
@@ -211,7 +211,7 @@ const Experience = () => {
               variants={staggerContainer}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.25 }}
+              viewport={{ once: true, amount: 0.25 }}
               className="text-center mb-[2rem] text-xl"
             >
               <TypingText
@@ -228,7 +228,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.3, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]
@@ -249,7 +249,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]
@@ -270,7 +270,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.5, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]
@@ -291,7 +291,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.6, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]
@@ -312,7 +312,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.7, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]
@@ -339,7 +339,7 @@ const Experience = () => {
                 variants={fadeIn("up", "tween", 0.8, 1)}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: false, amount: 0.25 }}
+                viewport={{ once: true, amount: 0.25 }}
               >
                 <article
                   className="flex gap-[1rem]

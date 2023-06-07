@@ -20,6 +20,7 @@
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+    --color-back: #1A232E;
 
     --transition: all 400ms ease;
 
@@ -37,10 +38,10 @@ html {
 }
 
 body {
-    /* background: var(--color-bg); */
+    background: var(--color-back);
     color: var(--color-white);
     line-height: 1.7;
-    /* background-image: url(/assets/bg-texture.png); */
+    background-image: url(/assets/bg-texture.png);
 }
 
 /* =============== General Styles =============== */
