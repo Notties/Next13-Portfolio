@@ -34,7 +34,7 @@ const About = () => {
           {/* about__me */}
 
           <motion.div
-            variants={fadeIn("right", "tween", 0.3, 1)}
+            variants={fadeIn("down", "tween", 0.3, 1)}
             initial="hidden"
             whileInView="show"
             viewport={{ once: false, amount: 0.25 }}
@@ -71,15 +71,9 @@ const About = () => {
 
           {/* about__content */}
           <div className="max-[600px]:text-center">
-            <motion.div
-              variants={fadeIn("left", "tween", 0.3, 1)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.25 }}
-            >
-              {/* about__cards */}
-              <div
-                className="gap-[1.5rem]
+            {/* about__cards */}
+            <div
+              className="gap-[1.5rem]
               grid
               grid-cols-3
               max-[1800px]:grid-cols-2
@@ -90,6 +84,12 @@ const About = () => {
               max-[600px]:my-[-5px]
               
               "
+            >
+              <motion.div
+                variants={fadeIn("down", "tween", 1, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
               >
                 {/* about__card */}
                 <article
@@ -112,9 +112,16 @@ const About = () => {
                     className="max-[600px]:mt-1
               max-[600px]:mb-0 text-[0.8rem] text-light max-[1024px]:my-1"
                   >
-                    4 Months Working
+                    3 months 18 days
                   </p>
                 </article>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("down", "tween", 1.5, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+              >
                 <article
                   className="bg-bg-variant border-1 scale-95  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
@@ -137,6 +144,14 @@ const About = () => {
                     500+ Hours
                   </p>
                 </article>
+              </motion.div>
+      
+              <motion.div
+                variants={fadeIn("down", "tween", 2.5, 1)}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0.25 }}
+              >
                 <article
                   className="bg-bg-variant border-1 scale-95  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
@@ -159,8 +174,14 @@ const About = () => {
                     20+ Repositories
                   </p>
                 </article>
-              </div>
-
+              </motion.div>
+            </div>
+            <motion.div
+              variants={fadeIn("inertia", "tween", 3.5, 1)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.25 }}
+            >
               <p
                 className="my-6 text-light max-[600px]:mb-2
               max-[600px]:mt-4 max-[600px]:text-[0.9rem]

@@ -22,6 +22,8 @@ module.exports = {
       'light': 'rgba(255, 255, 255, 0.6)',
       'black': 'rgba(0, 0, 0, 0.3)',
       'black-variant': 'rgba(0, 0, 0, 0.2)',
+      'primary-black': '#1A232E',
+      'secondary-white': '#c7c7c7',
     },
   },
   

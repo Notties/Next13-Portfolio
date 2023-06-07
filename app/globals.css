@@ -37,10 +37,10 @@ html {
 }
 
 body {
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(/assets/bg-texture.png);
+    /* background-image: url(/assets/bg-texture.png); */
 }
 
 /* =============== General Styles =============== */
@@ -49,7 +49,48 @@ body {
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+.gradient-01 {
+    position: absolute;
+    background-image: linear-gradient(270deg,
+            hsl(295deg 76% 51%) 0%,
+            hsl(284deg 70% 73%) 26%,
+            hsl(257deg 70% 86%) 39%,
+            hsl(202deg 92% 90%) 50%,
+            hsl(215deg 77% 81%) 61%,
+            hsl(221deg 73% 70%) 74%,
+            hsl(220deg 76% 51%) 100%);
+    filter: blur(125px);
+}
+
+.gradient-03 {
+    position: absolute;
+    width: 404px;
+    height: 800px;
+    left: 20%;
+    top: 5%;
+
+    background: rgba(149, 66, 232, 0.35);
+    filter: blur(175px);
+    transform: rotate(-114.2deg);
+}
+
+.gradient-04 {
+    position: absolute;
+    width: 304px;
+    height: 100vh;
+    left: 30%;
+    top: 10%;
+
+    background: rgba(45, 72, 152, 0.75);
+    filter: blur(200px);
+    transform: rotate(-53.13deg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 
@@ -61,12 +102,13 @@ section {
     margin-top: 8rem;
 }
 
-section > h2, section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
@@ -123,7 +165,7 @@ a:hover {
         width: var(--container-width-sm);
     }
 
-    section > h2 {
+    section>h2 {
         margin-bottom: 2rem;
     }
 }

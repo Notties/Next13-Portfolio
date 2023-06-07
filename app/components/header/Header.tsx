@@ -8,15 +8,17 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 const Header = () => {
   return (
+    <>
     <header
       className="h-[100vh] pt-28 overflow-hidden
       max-[1024px]:h-[68vh] max-[600px]:h-[100vh]
     "
     >
+      
       <div
         className="
         container text-center items-center h-[100%] relative 
-      "
+        "
       >
         <motion.div
           variants={staggerContainer}
@@ -63,6 +65,7 @@ const Header = () => {
         </motion.div>
       </div>
     </header>
+    </>
   );
 };
 

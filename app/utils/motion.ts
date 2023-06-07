@@ -77,6 +77,16 @@ export const textContainer = {
   }),
 };
 
+export const textContainerCustom = (duration: any) => ({
+  hidden: {
+    opacity: 0,
+  },
+  show: (i = 1) => ({
+    opacity: 1,
+    transition: { delay: duration, staggerChildren: 0.1, delayChildren: i * 0.1 },
+  }),
+});
+
 export const textVariant2 = {
   hidden: {
     opacity: 0,

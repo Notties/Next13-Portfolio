@@ -1,5 +1,3 @@
-
-
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Experience from "./components/experience/Experience";
@@ -11,13 +9,21 @@ import Portfolio from "./components/portfolio/Portfolio";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <div className="bg-primary-black overflow-hidden">
+        <div className="relative">
+          <Header />
+        </div>
+        <Nav />
+        <div className="relative">
+          <About />
+          <Experience />
+        </div>
+        <div className="relative">
+          <Portfolio />
+          <Contact />
+        </div>
+        <Footer />
+      </div>
     </>
   );
 }
