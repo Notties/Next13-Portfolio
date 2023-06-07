@@ -3,7 +3,9 @@
 import CTA from "./CTA";
 import Image from "next/image";
 import HeaderSocial from "./HeaderSocial";
-
+import { TypingText } from "../CustomTexts";
+import { fadeIn, staggerContainer } from "../../utils/motion";
+import { motion } from "framer-motion";
 const Header = () => {
   return (
     <header
@@ -16,33 +18,49 @@ const Header = () => {
         container text-center items-center h-[100%] relative 
       "
       >
-        <h5>Hello I'm</h5>
-        <h1>Akthakorn Traimitr</h1>
-        <h5 className="text-light">Developer</h5>
-        <CTA />
-
-        <HeaderSocial />
-        <div
-          className="
-          bg-gradient-to-b from-primary absolute
-          left-[calc(50%_-_11rem)] mt-16 rounded-t-[12rem]
-          overflow-hidden px-3 pt-20
-        "
+        <motion.div
+          variants={staggerContainer}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.25 }}
         >
-          <Image
-            src="/assets/me.png"
-            alt="me"
-            width={352}
-            height={480}
-            loading='lazy'
+          <h5 className="text-light">Hello I'm</h5>
+          {/* <h1>Akthakorn Traimitr</h1> */}
+          <TypingText
+            title="Akthakorn Traimitr"
+            textStyles="text-center text-[2.5rem]"
           />
-        </div>
-        <a
-          href="#about"
-          className="absolute right-[-2.3rem] bottom-[5rem] rotate-90 font-normal text-[0.9rem] max-[600px]:hidden"
-        >
-          Scroll Down
-        </a>
+          <TypingText
+            title="Junior Developer 👻"
+            textStyles="text-center text-lg"
+          />
+          <CTA />
+          <HeaderSocial />
+          <motion.div variants={fadeIn("up", "tween", 0.3, 1)}>
+            <div
+              className="
+                bg-gradient-to-b from-primary absolute
+                left-[calc(50%_-_11rem)] mt-16 rounded-t-[12rem]
+                overflow-hidden px-3 pt-20
+              "
+            >
+              <Image
+                src="/assets/me.png"
+                alt="me"
+                width={352}
+                height={480}
+                loading="lazy"
+              />
+            </div>
+          </motion.div>
+
+          <a
+            href="#about"
+            className="absolute right-[-2.3rem] bottom-[5rem] rotate-90 font-normal text-[0.9rem] max-[600px]:hidden"
+          >
+            Scroll Down
+          </a>
+        </motion.div>
       </div>
     </header>
   );
