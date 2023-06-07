@@ -3,7 +3,7 @@
 import Image from "next/image";
 import data from "../../constants/PortfolioData.json";
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "@/app/utils/motion";
+import { staggerContainer } from "@/app/utils/motion";
 import { TypingText } from "../CustomTexts";
 
 interface MyData {
@@ -47,13 +47,6 @@ const Portfolio = () => {
         >
           {jsonData.map(({ id, image, title, github, demo, view }: MyData) => {
             return (
-              <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-              >
-                <motion.div variants={fadeIn("down", "spring", id * 0.5, 0.75)}>
                   <article
                     className="bg-bg-variant border-1  border-solid rounded-[1rem] p-[2rem] text-center
                 hover:bg-opacity-10 backdrop-blur-sm hover:bg-gradient-to-b from-primary-variant transition
@@ -116,8 +109,6 @@ const Portfolio = () => {
                       ) : null}
                     </div>
                   </article>
-                </motion.div>
-              </motion.div>
             );
           })}
         </div>
